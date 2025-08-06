@@ -5,7 +5,7 @@
 	"textures": {
 		"3": "item/xiques/tophat",
 		"4": "item/xiques/diamond",
-		"particle": "tophat"
+		"particle": "item/xiques/tophat"
 	},
 	"elements": [
 		{
