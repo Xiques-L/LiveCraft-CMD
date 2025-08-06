@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "item/custom/permit-diamond",
 		"1": "item/custom/wax3",
-		"particle": "permit-diamond"
+		"particle": "item/xiques/permit-diamond"
 	},
 	"elements": [
 		{
