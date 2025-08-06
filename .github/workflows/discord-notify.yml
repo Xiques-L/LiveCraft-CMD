@@ -38,4 +38,4 @@ jobs:
                 "timestamp": "${{ github.event.head_commit.timestamp }}"
               }]
             }' \
-            https://discord.com/api/webhooks/1402630965129646090/vCwi4GKbqJY5ZdS9P3WXcOHydjqP2TcbFQelpXDzxs2kXPrR2QHkKLgfNlOcsCRmdB5U
+            https://ptb.discord.com/api/webhooks/1402630965129646090/vCwi4GKbqJY5ZdS9P3WXcOHydjqP2TcbFQelpXDzxs2kXPrR2QHkKLgfNlOcsCRmdB5U
