@@ -4,11 +4,14 @@ on:
   push:
     branches:
       - model-submissions
+  workflow_dispatch:
 
 jobs:
   notify-discord:
     runs-on: ubuntu-latest
     steps:
+      - name: Check curl availability
+        run: curl --version
       - name: 📦 Send Discord Embed
         run: |
           curl -H "Content-Type: application/json" \
@@ -38,4 +41,4 @@ jobs:
                 "timestamp": "${{ github.event.head_commit.timestamp }}"
               }]
             }' \
-            https://ptb.discord.com/api/webhooks/1402630965129646090/vCwi4GKbqJY5ZdS9P3WXcOHydjqP2TcbFQelpXDzxs2kXPrR2QHkKLgfNlOcsCRmdB5U
+            https://discord.com/api/webhooks/1402630965129646090/vCwi4GKbqJY5ZdS9P3WXcOHydjqP2TcbFQelpXDzxs2kXPrR2QHkKLgfNlOcsCRmdB5U
