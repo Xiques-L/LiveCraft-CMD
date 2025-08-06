@@ -8,15 +8,15 @@
 ## 📦 โครงสร้างไฟล์ที่ต้องใช้
 
 กรุณาสร้างโฟลเดอร์ของคุณใน `model-submissions/` โดยใช้ชื่อที่ไม่ซ้ำกัน เช่น:
-    └── model-submissions/assets/minecraft/
-                                    └── items/stick.json | ในกรณีที่ยังไม่มี stick.json
-                                    └── models/item/xiques/custom-stick.json
-                                    └── textures/item/xiques/custom-stick.png
+    <br />└── model-submissions/assets/minecraft/
+                                    <br />└── items/stick.json | ในกรณีที่ยังไม่มี stick.json
+                                    <br />└── models/item/xiques/custom-stick.json
+                                    <br />└── textures/item/xiques/custom-stick.png
 
 ---
 
 > 🔒 อย่าแก้ไขไฟล์นอกโฟลเดอร์ของคุณ
-> 🔒 ห้าม push เข้า branch `main` โดยตรง
+<br />> 🔒 ห้าม push เข้า branch `main` โดยตรง
 
 ---
 
@@ -45,7 +45,7 @@
 
 ## 🔔 แจ้งเตือน
 ทุกครั้งที่มีการ push เข้า model-submissions จะมีการแจ้งเตือนใน Discord
-ทีมงานจะตรวจสอบและ merge เข้าสู่ branch หลัก (main) หากผ่านเกณฑ์
+<br />ทีมงานจะตรวจสอบและ merge เข้าสู่ branch หลัก (main) หากผ่านเกณฑ์
 
 ---
 
