@@ -9,6 +9,13 @@
           "type": "model",
           "model": "item/custom/diamond-tophat"
         }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "model",
+          "model": "item/custom/permit-diamond"
+        }
       }
     ],
     "fallback": {
