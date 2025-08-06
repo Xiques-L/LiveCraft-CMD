@@ -7,14 +7,14 @@
         "threshold": 0,
         "model": {
           "type": "model",
-          "model": "item/custom/diamond-tophat"
+          "model": "item/xiques/diamond-tophat"
         }
       },
       {
         "threshold": 1,
         "model": {
           "type": "model",
-          "model": "item/custom/permit-diamond"
+          "model": "item/xiques/permit-diamond"
         }
       }
     ],
