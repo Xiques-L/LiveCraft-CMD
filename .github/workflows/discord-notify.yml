@@ -1,0 +1,41 @@
+name: 📢 Discord Push Notification
+
+on:
+  push:
+    branches:
+      - model-submissions
+
+jobs:
+  notify-discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📦 Send Discord Embed
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d '{
+              "embeds": [{
+                "title": "📤 New Push to LiveCraft-CMD",
+                "description": "**${{ github.actor }}** pushed to `${{ github.ref_name }}`",
+                "url": "https://github.com/${{ github.repository }}/commit/${{ github.sha }}",
+                "color": 5814783,
+                "fields": [
+                  {
+                    "name": "Commit Message",
+                    "value": "${{ github.event.head_commit.message }}",
+                    "inline": false
+                  },
+                  {
+                    "name": "Commit Link",
+                    "value": "[View Commit](https://github.com/${{ github.repository }}/commit/${{ github.sha }})",
+                    "inline": true
+                  }
+                ],
+                "footer": {
+                  "text": "LiveCraft-CMD GitHub → Discord",
+                  "icon_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                },
+                "timestamp": "${{ github.event.head_commit.timestamp }}"
+              }]
+            }' \
+            https://discord.com/api/webhooks/1402630965129646090/vCwi4GKbqJY5ZdS9P3WXcOHydjqP2TcbFQelpXDzxs2kXPrR2QHkKLgfNlOcsCRmdB5U
