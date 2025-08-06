@@ -28,9 +28,11 @@
    git checkout model-submissions
 3. สร้างโฟลเดอร์ของคุณและเพิ่มไฟล์โมเดล
 4. Commit และ Push:
+   ```git
    git add .
    git commit -m "Add stick model by xiques"
    git push origin model-submissions
+   ```
 
 ---
 
