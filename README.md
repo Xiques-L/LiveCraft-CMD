@@ -9,7 +9,7 @@
 
 กรุณาสร้างโฟลเดอร์ของคุณใน `model-submissions/` โดยใช้ชื่อที่ไม่ซ้ำกัน เช่น:
     └── model-submissions/assets/minecraft/
-                                    <!-- └── items/stick.json | ในกรณีที่ยังไม่มี stick.json -->
+                                    └── items/stick.json | ในกรณีที่ยังไม่มี stick.json
                                     └── models/item/xiques/custom-stick.json
                                     └── textures/item/xiques/custom-stick.png
 
