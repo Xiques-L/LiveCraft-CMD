@@ -1,19 +1,19 @@
 {
-    "model": {
-        "type": "select",
-        "property": "custom_model_data",
-        "fallback": {
-            "type": "model",
-            "model": "item/carved_pumpkin"
-        },
-        "cases": [
-            {
-                "when": "diamond-tophat",
-                "model": {
-                    "type": "model",
-                    "model": "item/custom/diamond-tophat"
-                }
-            }
-        ]
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "entries": [
+      {
+        "threshold": 1,
+        "model": {
+          "type": "model",
+          "model": "item/custom/diamond-tophat"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/carved_pumpkin"
     }
+  }
 }
