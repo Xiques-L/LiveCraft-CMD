@@ -2,16 +2,17 @@
   "model": {
     "type": "range_dispatch",
     "property": "custom_model_data",
+    "_comment": "ห้ามใช้ threshold 0 เพราะจะทำให้โมเดลนี้ถูกใช้เป็นโมเดลหลักของไอเท็ม",
     "entries": [
       {
-        "threshold": 0,
+        "threshold": 1,
         "model": {
           "type": "model",
           "model": "item/xiques/diamond-tophat"
         }
       },
       {
-        "threshold": 1,
+        "threshold": 2,
         "model": {
           "type": "model",
           "model": "item/xiques/permit-diamond"

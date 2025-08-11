@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "item/custom/permit-diamond",
-		"1": "item/custom/wax3",
+		"0": "item/xiques/permit-diamond",
+		"1": "item/xiques/wax3",
 		"particle": "item/xiques/permit-diamond"
 	},
 	"elements": [
