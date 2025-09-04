@@ -10,6 +10,13 @@
           "type": "model",
           "model": "item/xiques/test-model"
         }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "model",
+          "model": "item/xiques/Sculk_Tendrils"
+        }
       }
     ],
     "fallback": {
